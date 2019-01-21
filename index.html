@@ -16,47 +16,6 @@
             font-size:12px;
         }
     </style>
-
-
-    <script>
-        function changeimg()
-        {
-            switch (document.hitcountertype.select1.options[document.hitcountertype.select1.selectedIndex].value)
-            {
-                case "0" : document.images.preview.src = "images/digits0/preview.png";break;
-                case "1" : document.images.preview.src = "images/digits1/preview.png";break;
-                case "2" : document.images.preview.src = "images/digits2/preview.png";break;
-                case "3" : document.images.preview.src = "images/digits3/preview.png";break;
-                case "4" : document.images.preview.src = "images/digits4/preview.png";break;
-                case "5" : document.images.preview.src = "images/digits5/preview.png";break;
-                case "6" : document.images.preview.src = "images/digits6/preview.png";break;
-                case "7" : document.images.preview.src = "images/digits7/preview.png";break;
-                case "8" : document.images.preview.src = "images/digits8/preview.png";break;
-                case "9" : document.images.preview.src = "images/digits9/preview.png";break;
-                case "10" : document.images.preview.src = "images/digits10/preview.png";break;
-                case "11" : document.images.preview.src = "images/digits11/preview.png";break;
-                case "12" : document.images.preview.src = "images/digits12/preview.png";break;
-                case "13" : document.images.preview.src = "images/digits13/preview.png";break;
-                case "14" : document.images.preview.src = "images/digits14/preview.png";break;
-                case "15" : document.images.preview.src = "images/digits15/preview.png";break;
-                case "16" : document.images.preview.src = "images/digits16/preview.png";break;
-                case "17" : document.images.preview.src = "images/digits17/preview.png";break;
-                case "18" : document.images.preview.src = "images/digits18/preview.png";break;
-                case "19" : document.images.preview.src = "images/digits19/preview.png";break;
-                case "20" : document.images.preview.src = "images/digits20/preview.png";break;
-                case "21" : document.images.preview.src = "images/digits21/preview.png";break;
-                case "22" : document.images.preview.src = "images/digits22/preview.png";break;
-                case "23" : document.images.preview.src = "images/digits23/preview.png";break;
-                case "24" : document.images.preview.src = "images/digits24/preview.png";break;
-                case "37" : document.images.preview.src = "images/digits37/preview.png";break;
-                case "38" : document.images.preview.src = "images/digits38/preview.png";break;
-                case "39" : document.images.preview.src = "images/digits39/preview.png";break;
-                case "40" : document.images.preview.src = "images/digits40/preview.png";break;
-                case "42" : document.images.preview.src = "images/digits42/preview.png";break;
-                case "43" : document.images.preview.src = "images/digits43/preview.png";break;
-            }
-        }
-    </script>
 </head>
 <body style="text-align:center;">
 <div class="header">
@@ -89,7 +48,7 @@
             <div style="text-align:center;">
                 <span style="vertical-align:middle;"><img name="preview" src="images/digits37/preview.png"></span>
 <span style="padding-left:10px;vertical-align:top;">
-<select name="select1" onChange="changeimg()";>
+<select name="select1">
 <option value="37" selected>Clock</option>
 <option value="38">Counter</option>
 <option value="39">Counter1</option>
