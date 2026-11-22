@@ -72,3 +72,16 @@ JSON status:
 ```text
 https://hit-counter.info/api/counters/my-site
 ```
+
+## HTTPS (configuración de zona, fuera del repo)
+
+En el panel de Cloudflare (SSL/TLS → Edge Certificates) deben estar activos:
+
+- **Always Use HTTPS**: redirige `http://` a `https://` con 301. Sin esto el navegador muestra "No seguro".
+- **Automatic HTTPS Rewrites**.
+
+GitHub Pages: Settings → Pages → **Enforce HTTPS** activado.
+
+## Favicon
+
+`favicon.svg` (principal), `favicon.ico` (16/32/48), `apple-touch-icon.png` y `favicon-192.png`, todos derivados de las cuatro barras del logo.
