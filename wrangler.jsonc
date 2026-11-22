@@ -1,0 +1,56 @@
+{
+  "name": "hit-counter-info",
+  "main": "cloudflare-worker.js",
+  "compatibility_date": "2026-03-20",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "hit-counter.info/c/*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "hit-counter.info/api/*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "hit-counter.info/preview.svg*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "hit-counter.info/health*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "www.hit-counter.info/c/*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "www.hit-counter.info/api/*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "www.hit-counter.info/preview.svg*",
+      "zone_name": "hit-counter.info"
+    },
+    {
+      "pattern": "www.hit-counter.info/health*",
+      "zone_name": "hit-counter.info"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "COUNTERS",
+        "class_name": "CounterDurableObject"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "CounterDurableObject"
+      ]
+    }
+  ]
+}

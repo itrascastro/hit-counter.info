@@ -4,417 +4,231 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Choose your free hit counter style.">
+    <meta name="description" content="Different hit counter styles to choose from. Pick the one you like best.">
     <meta name="author" content="hit-counter.info">
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <title>Hit Counter Styles</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/counter.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Hit Counter Styles - Choose your free hit counter for your web site or blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/css/revive-site.css?v=20260321g">
 </head>
-
-<body>
-
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/"><img src="images/small-logo.gif" class="img-responsive visible-xs" alt="Hit counter"><img src="images/logo.gif" class="img-responsive hidden-xs" alt="Hit counter"></a>
+<body class="revive-body">
+<div class="site-shell">
+    <header class="site-topbar">
+        <div class="topbar-inner">
+            <a class="brand-link" href="/" title="hit-counter.info">
+                <span class="brand-lockup">
+                    <svg class="brand-icon" viewBox="0 0 80 64" aria-hidden="true"><rect x="0" y="36" width="14" height="28" rx="7" fill="#ff8c00"/><rect x="21" y="24" width="14" height="40" rx="7" fill="#ff9f2f"/><rect x="42" y="12" width="14" height="52" rx="7" fill="#ffb252"/><rect x="63" y="0" width="14" height="64" rx="7" fill="#ffc57a"/></svg>
+                    <span class="brand-name">hit-counter.info</span>
+                </span>
+            </a>
+            <div class="site-nav-shell">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="/">Home</a>
+                    <a class="active" href="/counter-styles.htm">Create counter</a>
+                </nav>
+            </div>
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li class="active"><a href="/counter-styles.htm">View All</a></li>
-                <li><a href="http://blog.hit-counter.info">Blog</a></li>
-                <li><a style="color:green;" href="/advertising.html">Advertising</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <p class="eyebrow">Generator</p>
+            <h1 class="page-title">Choose your hit counter</h1>
+            <p class="page-copy">Different hit counter styles to choose from. Pick the one you like best.</p>
+            <div class="badge-row">
+                <span class="badge">Free</span>
+                <span class="badge">Responsive</span>
+                <span class="badge">Ready to copy</span>
+            </div>
+        </section>
+
+        <section class="generator-layout">
+            <div class="section-stack">
+                <div id="counter-configurator" class="page-panel">
+                    <h2 class="panel-heading-modern">Set up your counter</h2>
+                    <form id="counter-generator-form" class="form-stack" role="form">
+                        <div>
+                            <label class="input-label" for="counter-site-url">Your site URL</label>
+                            <input id="counter-site-url" class="input-control" type="url" value="" placeholder="https://www.example.com/" required>
+                            <p class="field-note">Paste your site URL.</p>
+                        </div>
+
+                        <div>
+                            <label class="input-label" for="counter-style">Style</label>
+                            <select id="counter-style" class="input-control"></select>
+                        </div>
+
+                        <div class="field-grid">
+                            <div>
+                                <label class="input-label" for="counter-digits">Digits</label>
+                                <select id="counter-digits" class="input-control">
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6" selected>6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="input-label" for="counter-start">Starting value</label>
+                                <input id="counter-start" class="input-control" type="number" min="0" value="0">
+                            </div>
+                            <div>
+                                <label class="input-label" for="counter-theme">Theme</label>
+                                <select id="counter-theme" class="input-control">
+                                    <option value="light">Light</option>
+                                    <option value="dark" selected>Dark</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="page-panel">
+                    <h2 class="panel-heading-modern">Customize colors</h2>
+                    <div class="form-stack">
+                        <div>
+                            <label class="input-label">Background</label>
+                            <input id="counter-bg" type="color" value="#ffffff" class="swatch-hidden-input">
+                            <div class="swatch-grid" data-target="counter-bg">
+                                <button type="button" class="swatch swatch--default active" data-action="reset" title="Default">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8a6 6 0 1 1 1.5 3.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M2 12.5V9h3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <button type="button" class="swatch" style="background:#ffffff" data-color="#ffffff" title="White"></button>
+                                <button type="button" class="swatch" style="background:#09090b" data-color="#09090b" title="Black"></button>
+                                <button type="button" class="swatch" style="background:#eb4d4b" data-color="#eb4d4b" title="Red"></button>
+                                <button type="button" class="swatch" style="background:#f78fb3" data-color="#f78fb3" title="Pink"></button>
+                                <button type="button" class="swatch" style="background:#6ab04c" data-color="#6ab04c" title="Green"></button>
+                                <button type="button" class="swatch" style="background:#2d8659" data-color="#2d8659" title="Dark green"></button>
+                                <button type="button" class="swatch" style="background:#22a6b3" data-color="#22a6b3" title="Teal"></button>
+                                <button type="button" class="swatch" style="background:#4a69bd" data-color="#4a69bd" title="Blue"></button>
+                                <button type="button" class="swatch" style="background:#6c5ce7" data-color="#6c5ce7" title="Indigo"></button>
+                                <button type="button" class="swatch" style="background:#9b59b6" data-color="#9b59b6" title="Purple"></button>
+                                <button type="button" class="swatch" style="background:#e84393" data-color="#e84393" title="Magenta"></button>
+                                <button type="button" class="swatch" style="background:#f06292" data-color="#f06292" title="Coral"></button>
+                                <button type="button" class="swatch" style="background:#e67e22" data-color="#e67e22" title="Orange"></button>
+                                <button type="button" class="swatch" style="background:#f7d731" data-color="#f7d731" title="Yellow"></button>
+                                <button type="button" class="swatch" style="background:#2ecc71" data-color="#2ecc71" title="Emerald"></button>
+                                <button type="button" class="swatch" style="background:#55efc4" data-color="#55efc4" title="Turquoise"></button>
+                                <button type="button" class="swatch" style="background:#74b9ff" data-color="#74b9ff" title="Sky blue"></button>
+                                <button type="button" class="swatch" style="background:#a29bfe" data-color="#a29bfe" title="Lavender"></button>
+                                <button type="button" class="swatch" style="background:#fd79a8" data-color="#fd79a8" title="Bubblegum"></button>
+                                <button type="button" class="swatch" style="background:#fab1a0" data-color="#fab1a0" title="Salmon"></button>
+                                <button type="button" class="swatch" style="background:#ffc0cb" data-color="#ffc0cb" title="Pastel pink"></button>
+                                <button type="button" class="swatch" style="background:#b8e994" data-color="#b8e994" title="Mint"></button>
+                                <button type="button" class="swatch swatch--custom" data-action="pick" title="Custom color">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 4v8M4 8h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="input-label">Text</label>
+                            <input id="counter-color" type="color" value="#34291f" class="swatch-hidden-input">
+                            <div class="swatch-grid" data-target="counter-color">
+                                <button type="button" class="swatch swatch--default active" data-action="reset" title="Default">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8a6 6 0 1 1 1.5 3.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M2 12.5V9h3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <button type="button" class="swatch" style="background:#ffffff" data-color="#ffffff" title="White"></button>
+                                <button type="button" class="swatch" style="background:#09090b" data-color="#09090b" title="Black"></button>
+                                <button type="button" class="swatch" style="background:#eb4d4b" data-color="#eb4d4b" title="Red"></button>
+                                <button type="button" class="swatch" style="background:#f78fb3" data-color="#f78fb3" title="Pink"></button>
+                                <button type="button" class="swatch" style="background:#6ab04c" data-color="#6ab04c" title="Green"></button>
+                                <button type="button" class="swatch" style="background:#2d8659" data-color="#2d8659" title="Dark green"></button>
+                                <button type="button" class="swatch" style="background:#22a6b3" data-color="#22a6b3" title="Teal"></button>
+                                <button type="button" class="swatch" style="background:#4a69bd" data-color="#4a69bd" title="Blue"></button>
+                                <button type="button" class="swatch" style="background:#6c5ce7" data-color="#6c5ce7" title="Indigo"></button>
+                                <button type="button" class="swatch" style="background:#9b59b6" data-color="#9b59b6" title="Purple"></button>
+                                <button type="button" class="swatch" style="background:#e84393" data-color="#e84393" title="Magenta"></button>
+                                <button type="button" class="swatch" style="background:#f06292" data-color="#f06292" title="Coral"></button>
+                                <button type="button" class="swatch" style="background:#e67e22" data-color="#e67e22" title="Orange"></button>
+                                <button type="button" class="swatch" style="background:#f7d731" data-color="#f7d731" title="Yellow"></button>
+                                <button type="button" class="swatch" style="background:#2ecc71" data-color="#2ecc71" title="Emerald"></button>
+                                <button type="button" class="swatch" style="background:#55efc4" data-color="#55efc4" title="Turquoise"></button>
+                                <button type="button" class="swatch" style="background:#74b9ff" data-color="#74b9ff" title="Sky blue"></button>
+                                <button type="button" class="swatch" style="background:#a29bfe" data-color="#a29bfe" title="Lavender"></button>
+                                <button type="button" class="swatch" style="background:#fd79a8" data-color="#fd79a8" title="Bubblegum"></button>
+                                <button type="button" class="swatch" style="background:#fab1a0" data-color="#fab1a0" title="Salmon"></button>
+                                <button type="button" class="swatch" style="background:#ffc0cb" data-color="#ffc0cb" title="Pastel pink"></button>
+                                <button type="button" class="swatch" style="background:#b8e994" data-color="#b8e994" title="Mint"></button>
+                                <button type="button" class="swatch swatch--custom" data-action="pick" title="Custom color">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 4v8M4 8h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="input-label" for="counter-radius">Border radius <span id="counter-radius-value">24px</span></label>
+                            <input id="counter-radius" class="input-control" type="range" min="0" max="32" value="24">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-stack">
+                <section class="page-panel">
+                    <h2 class="panel-heading-modern">Preview</h2>
+                    <div class="preview-stage">
+                        <img id="counter-preview-image" alt="Hit counter preview">
+                    </div>
+                    <p id="selected-style-label" class="selected-style-copy"></p>
+                </section>
+
+                <section class="page-panel">
+                    <h2 class="panel-heading-modern">Ready-to-copy HTML code</h2>
+                    <textarea id="counter-snippet" class="snippet-box" readonly></textarea>
+                    <div class="action-row">
+                        <button id="copy-counter-snippet" class="button-primary" type="button">Copy code</button>
+                    </div>
+                    <p class="field-note">Copy the code and paste it wherever you want the counter to show.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <h2 class="section-title">Choose a style</h2>
+            <div id="style-gallery" class="style-grid"></div>
+        </section>
+
+        <section class="page-section split-grid">
+            <div class="utility-card">
+                <h2>Just do this</h2>
+                <ol class="simple-steps">
+                    <li>Pick the style you like best.</li>
+                        <li>Paste your URL, set the digits and the starting value.</li>
+                    <li>Copy the code and paste it into your site or blog.</li>
+                </ol>
+            </div>
+            <div class="utility-card">
+                <h2>Ready to use</h2>
+                <p class="section-copy">Try different styles, keep the one that best fits your design and publish it when you are happy with the result.</p>
+                <div class="action-row">
+                    <a class="button-secondary" href="/">Back to home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>
+            <span class="footer-links">
+                <a href="/">Home</a>
+                <a href="/advertising.html">Advertising</a>
+            </span>
+            <span class="muted-inline">© <span id="footer-year">2026</span> hit-counter.info</span>
+        </small>
+    </footer>
+    <script>var y=document.getElementById('footer-year');if(y)y.textContent=new Date().getFullYear();</script>
 </div>
 
-<!-- Begin page content -->
-<div class="container">
-
-    <form id="signup-fr2" method="post" action="signup.php" class="form-horizontal form-signin2" role="form">
-
-        <div class="row clearfix">
-
-            <div class="col-md-3 column">
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio0" name="select1" value="0" checked="true">
-                        <img class="previewImage" id="image0" src="/images/digits0/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio1" name="select1" value="1">
-                        <img class="previewImage" id="image1" src="/images/digits1/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio2" name="select1" value="2">
-                        <img class="previewImage" id="image2" src="/images/digits2/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio3" name="select1" value="3">
-                        <img class="previewImage" id="image3" src="/images/digits3/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio4" name="select1" value="4">
-                        <img class="previewImage" id="image4" src="/images/digits4/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio5" name="select1" value="5">
-                        <img class="previewImage" id="image5" src="/images/digits5/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio6" name="select1" value="6">
-                        <img class="previewImage" id="image6" src="/images/digits6/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio7" name="select1" value="7">
-                        <img class="previewImage" id="image7" src="/images/digits7/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio8" name="select1" value="8">
-                        <img class="previewImage" id="image8" src="/images/digits8/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio9" name="select1" value="9">
-                        <img class="previewImage" id="image9" src="/images/digits9/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio10" name="select1" value="10">
-                        <img class="previewImage" id="image10" src="/images/digits10/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio11" name="select1" value="11">
-                        <img class="previewImage" id="image11" src="/images/digits11/preview.png">
-                    </div>
-                </div>
-
-             </div>
-
-            <div class="col-md-3 column">
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio12" name="select1" value="12">
-                        <img class="previewImage" id="image12" src="/images/digits12/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio13" name="select1" value="13">
-                        <img class="previewImage" id="image13" src="/images/digits13/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio14" name="select1" value="14">
-                        <img class="previewImage" id="image14" src="/images/digits14/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio15" name="select1" value="15">
-                        <img class="previewImage" id="image15" src="/images/digits15/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio16" name="select1" value="16">
-                        <img class="previewImage" id="image16" src="/images/digits16/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio17" name="select1" value="17">
-                        <img class="previewImage" id="image17" src="/images/digits17/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio18" name="select1" value="18">
-                        <img class="previewImage" id="image18" src="/images/digits18/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio19" name="select1" value="19">
-                        <img class="previewImage" id="image19" src="/images/digits19/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio20" name="select1" value="20">
-                        <img class="previewImage" id="image20" src="/images/digits20/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio21" name="select1" value="21">
-                        <img class="previewImage" id="image21" src="/images/digits21/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio22" name="select1" value="22">
-                        <img class="previewImage" id="image22" src="/images/digits22/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio23" name="select1" value="23">
-                        <img class="previewImage" id="image23" src="/images/digits23/preview.png">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 column">
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio24" name="select1" value="24">
-                        <img class="previewImage" id="image24" src="/images/digits24/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio25" name="select1" value="25">
-                        <img class="previewImage" id="image25" src="/images/digits25/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio26" name="select1" value="26">
-                        <img class="previewImage" id="image26" src="/images/digits26/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio27" name="select1" value="27">
-                        <img class="previewImage" id="image27" src="/images/digits27/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio28" name="select1" value="28">
-                        <img class="previewImage" id="image28" src="/images/digits28/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio29" name="select1" value="29">
-                        <img class="previewImage" id="image29" src="/images/digits29/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio30" name="select1" value="30">
-                        <img class="previewImage" id="image30" src="/images/digits30/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio31" name="select1" value="31">
-                        <img class="previewImage" id="image31" src="/images/digits31/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio32" name="select1" value="32">
-                        <img class="previewImage" id="image32" src="/images/digits32/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio33" name="select1" value="33">
-                        <img class="previewImage" id="image33" src="/images/digits33/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio34" name="select1" value="34">
-                        <img class="previewImage" id="image34" src="/images/digits34/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio35" name="select1" value="35">
-                        <img class="previewImage" id="image35" src="/images/digits35/preview.png">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 column">
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio36" name="select1" value="36">
-                        <img class="previewImage" id="image36" src="/images/digits36/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio37" name="select1" value="37">
-                        <img class="previewImage" id="image37" src="/images/digits37/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio38" name="select1" value="38">
-                        <img class="previewImage" id="image38" src="/images/digits38/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio39" name="select1" value="39">
-                        <img class="previewImage" id="image39" src="/images/digits39/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio40" name="select1" value="40">
-                        <img class="previewImage" id="image40" src="/images/digits40/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio42" name="select1" value="42">
-                        <img class="previewImage" id="image42" src="/images/digits42/preview.png">
-                    </div>
-                </div>
-
-                <div class="control-group control-group-margin">
-                    <div class="controls form-inline">
-                        <input type="radio" id="radio43" name="select1" value="43">
-                        <img class="previewImage" id="image43" src="/images/digits43/preview.png">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row clearfix">
-
-            <input type="number" name="initialvalue" class="form-control input-lg" placeholder="Starting count">
-            <input type="url" name="url" class="form-control input-lg" placeholder="http://">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Get counter code</button>
-
-        </div>
-
-    </form>
-
-    <div id="links" class="row clearfix">
-        <div class="col-md-12 column">
-            <p class="text-center">
-                <a href="http://www.blogger.com/start?hl=es">Blogger</a>
-                | <a href="http://es.wordpress.com">Wordpress</a>
-                | <a href="http://www.tumblr.com">Tumblr</a>
-                | <a href="http://www.facebook.com">Facebook</a>
-            </p>
-        </div>
-    </div>
-
-</div> <!-- /container -->
-
-<div id="footer">
-
-    <div class="container">
-        <p class="text-muted text-right">Powered By <a href="/">hit-counter.info</a></p>
-    </div>
-
-</div>
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/counter.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/js/site-nav.js?v=20260321d"></script>
+<script type="module" src="/js/revive-counter-generator.js?v=20260321d"></script>
 </body>
 </html>

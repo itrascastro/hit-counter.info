@@ -5,94 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="hit-counter.info">
-    <meta name="robots" content="noindex,follow" />
-    <link rel="shortcut icon" href="images/favicon.ico">
-
+    <meta name="robots" content="noindex,follow">
+    <link rel="shortcut icon" href="/favicon.ico">
     <title>Advertising</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/counter.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/css/revive-site.css?v=20260321g">
 </head>
-
-<body>
-
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/"><img src="images/small-logo.gif" class="img-responsive visible-xs" alt="Hit counter"><img src="images/logo.gif" class="img-responsive hidden-xs" alt="Hit counter"></a>
+<body class="revive-body">
+<div class="site-shell">
+    <header class="site-topbar">
+        <div class="topbar-inner">
+            <a class="brand-link" href="/" title="hit-counter.info">
+                <span class="brand-lockup">
+                    <svg class="brand-icon" viewBox="0 0 80 64" aria-hidden="true"><rect x="0" y="36" width="14" height="28" rx="7" fill="#ff8c00"/><rect x="21" y="24" width="14" height="40" rx="7" fill="#ff9f2f"/><rect x="42" y="12" width="14" height="52" rx="7" fill="#ffb252"/><rect x="63" y="0" width="14" height="64" rx="7" fill="#ffc57a"/></svg>
+                    <span class="brand-name">hit-counter.info</span>
+                </span>
+            </a>
+            <div class="site-nav-shell">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="/">Home</a>
+                    <a href="/counter-styles.htm">Create counter</a>
+                </nav>
+            </div>
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/counter-styles.htm">View All</a></li>
-                <li><a href="http://blog.hit-counter.info">Blog</a></li>
-                <li class="active"><a href="/advertising.html">Advertising</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <p class="eyebrow">Advertising</p>
+            <h1 class="page-title">Text-Link advertising</h1>
+            <p class="page-copy">You can advertise on hit-counter.info with a text link on our home page.</p>
+        </section>
+
+        <section class="page-section">
+            <div class="page-panel">
+                <h2 class="panel-heading-modern">More info</h2>
+                <p class="section-copy">To ask for more info email us at <code style="color:var(--accent);background:rgba(249,115,22,0.08);padding:2px 6px;border-radius:4px;font-size:14px;">itrascastro at gmail.com</code></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>
+            <span class="footer-links">
+                <a href="/">Home</a>
+                <a href="/counter-styles.htm">Create counter</a>
+            </span>
+            <span class="muted-inline">© <span id="footer-year">2026</span> hit-counter.info</span>
+        </small>
+    </footer>
 </div>
 
-<!-- Begin page content -->
-<div class="container">
-
-    <div class="row clearfix">
-
-        <div class="col-md-12 column">
-            <h1>
-                Text-Link advertising
-            </h1>
-            <p class="lead">You can have a text link to your website in our home page.</p>
-        </div>
-    </div>
-
-    <div class="row clearfix">
-
-        <div class="col-md-12 column">
-            <h2>More info</h2>
-            <p class="lead">
-                To ask for more info email us to <code>itrascastro at gmail.com</code>
-            </p>
-        </div>
-
-    </div>
-
-</div> <!-- /container -->
-
-<div id="footer">
-
-    <div class="container">
-        <p class="text-muted text-right">Powered By <a href="/">hit-counter.info</a></p>
-    </div>
-
-</div>
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/counter.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>var y=document.getElementById('footer-year');if(y)y.textContent=new Date().getFullYear();</script>
+<script src="/js/site-nav.js?v=20260321d"></script>
 </body>
 </html>
-
